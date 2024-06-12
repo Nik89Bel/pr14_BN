@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAlarmActivity"
+    android:background="@color/c00">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="250"
+        android:text="Добавить задачу"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_row="0"/>
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/strelkabut"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="-40dp"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:onClick="but5" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="250"
+        android:background="@drawable/rectangle3"
+        android:text="Заголовок задачи"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/rectangle4">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:text="15:30\n16:00\n16:30\n17:00\n17:30"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_marginLeft="-150dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/rectangle5">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp"
+            android:text="12.01.2021\n13.01.2021\n14.01.2021\n15.01.2021\n16.01.2021"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+
+    </ScrollView>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="250"
+        android:background="@drawable/rectangle6"
+        android:text="Описание задачи"
+        android:textColor="@color/black"
+        android:paddingBottom="70dp" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/rectangle1"
+        android:onClick="but1"
+        android:text="Записать задачу"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</GridLayout>

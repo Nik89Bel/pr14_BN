@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTascActivity"
+    android:background="@color/c00">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="28dp"
+        android:layout_weight="250"
+        android:text="Изменить будильник"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@+id/textView"
+        android:background="@drawable/strelkabut"
+        android:onClick="but5" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangle4"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:text="15:30\n16:00\n16:30\n17:00\n17:30"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:background="@drawable/rectangle5"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:orientation="vertical"
+            android:text="12.01.2021\n13.01.2021\n14.01.2021\n15.01.2021\n16.01.2021"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Повторять каждый день"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle7" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Понедельник"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rectangle7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Вторник"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rectangle7" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Среда"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rectangle7" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Четверг"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rectangle7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Пятница"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rectangle7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Суббота"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rectangle7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Воскресенье"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button4"
+        android:onClick="but2"
+        android:text="Удалить будильник"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rectangle1"
+        android:onClick="but2"
+        android:text="Сохранить будильник"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>
